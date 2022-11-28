@@ -2,7 +2,7 @@ import { Interpreter } from "./suggest"
 
 const randoms = [
   () => Math.floor(Math.random() * 369) > 111,
-  () => Math.floor(Math.random() * 111 * 1),
+  () => Math.floor(Math.random() * (111 - Math.PI) * Math.PI),
 ]
 
 const suggester = [

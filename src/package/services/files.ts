@@ -1,7 +1,9 @@
 const fs = window.require("fs")
 
+const check = /^\s*[\r\n]/gm
+
 function parse(str){
-  return str.toLowerCase().replace("/^\s*[\r\n]/gm", "").split("\n")
+  return str.toLowerCase().replace(check, "").split("\n")
 }
 
 export function Files(path) {
