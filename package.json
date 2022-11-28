@@ -28,7 +28,7 @@
         {
           "name": "@rabbitholesyndrome/electron-forge-maker-portable",
           "config": {
-            "productName": "The Law of One",
+            "productName": "law-of-one",
             "icon": "/icon.png",
             "portable": {
               "artifactName": "${productName}.exe"
