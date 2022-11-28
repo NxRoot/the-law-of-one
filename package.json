@@ -26,9 +26,12 @@
       "packagerConfig": {},
       "makers": [
         {
-          "name": "@electron-forge/maker-squirrel",
+          "name": "@rabbitholesyndrome/electron-forge-maker-portable",
           "config": {
-            "name": "rte_ts"
+            "productName": "The Law of One",
+            "portable": {
+              "artifactName": "${productName}.exe"
+            }
           }
         },
         {
@@ -73,6 +76,7 @@
     "@electron-forge/maker-squirrel": "^6.0.0-beta.64",
     "@electron-forge/maker-zip": "^6.0.0-beta.64",
     "@electron-forge/plugin-webpack": "6.0.0-beta.64",
+    "@rabbitholesyndrome/electron-forge-maker-portable": "^0.1.1",
     "@svgr/webpack": "^6.2.1",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",

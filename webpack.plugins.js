@@ -18,6 +18,10 @@ module.exports = [
         from: path.resolve(__dirname, 'src/words',),
         to: path.resolve(__dirname, 'node_modules/electron/dist/Electron.app/Contents/Resources/electron.asar/words')
       },
+      {
+        from: path.resolve(__dirname, 'src/words',),
+        to: path.resolve(__dirname, 'node_modules/electron/dist/words')
+      }
     ]
   })
 ];

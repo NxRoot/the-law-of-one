@@ -6,9 +6,13 @@ import { Files } from "../services/files"
 import { Interpreter } from "../services/suggest"
 import { useStore } from "../store"
 
+const os = window.require('os');
+const isMac = os.platform() === "darwin";
+
 const path = window.require("path")
-const wordPath = path.join(__dirname, "../words/wordlist.txt")
-const bookPath = path.join(__dirname, "../words/sentences.txt")
+const root = isMac ? __dirname : "resources/app/.webpack/renderer/main_window"
+const wordPath = path.join(root, "../words/wordlist.txt")
+const bookPath = path.join(root, "../words/sentences.txt")
 
 export function AppContainer() {
   const [loadingVox, setLoadingVox] = useState(true)
