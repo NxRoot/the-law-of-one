@@ -6,11 +6,15 @@ import { Files } from "../services/files"
 import { Interpreter } from "../services/suggest"
 import { useStore } from "../store"
 
+const app = window.require('electron').remote.app;
+const path = window.require("path")
 const os = window.require('os');
 const isMac = os.platform() === "darwin";
 
-const path = window.require("path")
-const root = isMac ? __dirname : "resources/app/.webpack/renderer/main_window"
+const mac = __dirname
+const win = !app.isPackaged ? process.execPath : "resources/app/.webpack/renderer/main_window"
+
+const root = isMac ? mac : win
 const wordPath = path.join(root, "../words/wordlist.txt")
 const bookPath = path.join(root, "../words/sentences.txt")
 

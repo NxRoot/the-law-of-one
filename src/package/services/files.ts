@@ -1,6 +1,6 @@
 const fs = window.require("fs")
 
-const check = /^\s*[\r\n]/gm
+const check = new RegExp(/^\s*[\r\n]/gm)
 
 function parse(str){
   return str.toLowerCase().replace(check, "").split("\n")

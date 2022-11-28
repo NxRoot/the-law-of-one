@@ -33,6 +33,7 @@ const createWindow = (): void => {
       contextIsolation: false,
       webSecurity: false,
       enableRemoteModule: true,
+      devTools: !app.isPackaged
     },
   });
 
