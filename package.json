@@ -2,7 +2,7 @@
   "name": "law-of-one",
   "productName": "law-of-one",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "The Law Of One",
   "main": ".webpack/main",
   "build": {
     "appId": "ra.nxpub.com",
