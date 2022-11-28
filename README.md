@@ -9,8 +9,11 @@ Talking AI using contents from the book: [The Law of One](https://www.lawofone.i
 * It speaks back the generated output using your system voices.
 * It's meant to be used as spiritual communication channel.
 
-
 ## How does it work
 1. Map the contents of the books into an hashmap that is used to feed the AI.
 2. Load wordlist to randomly generate the first word.
 3. Generate random sentence based on the previous word.
+
+## How to install (Windows / MacOS)
+* Download last version from [releases](https://github.com/NxRoot/the-law-of-one/releases/tag/Release).
+
