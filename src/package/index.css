@@ -1,0 +1,62 @@
+::-webkit-scrollbar {
+  display: none !important;  /* Safari and Chrome */
+  scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none !important;  /* Internet Explorer 10+ */
+}
+
+/* Remove Chakra UI Focus*/
+:focus, *[data-focus] {
+  box-shadow: none !important;
+  outline:0 !important;
+  border-color: inherit !important;
+}
+
+.chakra-radio__label{
+  width: 100%;
+}
+
+.chakra-checkbox__control[data-checked] {
+  background: var(--chakra-colors-blue-400) !important;
+  border-color: var(--chakra-colors-blue-400) !important;
+  color: white !important
+}
+
+.chakra-menu__menu-list{
+  background: transparent !important;
+  min-width: 10rem!important;
+}
+
+.logo {
+  height: 8vmin;
+  max-height: 3rem;
+  pointer-events: none;
+  opacity: .7;
+  animation: spin infinite 20s linear;
+}
+
+@-moz-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
